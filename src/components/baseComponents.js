@@ -18,13 +18,17 @@ export const ContentPage = styled(Content)`
 `;
 
 export const FormItem = styled(Form.Item)`
-    display: flex;
-    & input{
+    margin: 2em;
+    & input:not([type='checkbox']){
         border: solid 3px #00aeff;
         margin-left: 3%;
         heigth: 40px;
         height: 1.5em;
         font-size: 1em;
         width: 50vh;
+        margin-top: 0.5em;
+    }
+    label{
+        font-size: 1.3em;
     }
 `;
