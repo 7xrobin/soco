@@ -1,6 +1,6 @@
 import React from 'react';
-import { Form, Input, Checkbox} from 'antd';
-import {ContentPage, FormItem} from 'components/baseComponents';
+import { Input, Checkbox} from 'antd';
+import {ContentPage,  Form, FormItem} from 'components/baseComponents';
 
 export default function UserInformation() {
     const materialOptions = [
@@ -26,7 +26,7 @@ export default function UserInformation() {
                     <Input placeholder="Quantos Cooperados" />
                 </FormItem>
                 <FormItem label="Materiais que trabalha">
-                     <Checkbox.Group options={materialOptions} defaultValue={['Apple']} onChange={onChange} />
+                     <Checkbox.Group options={materialOptions} onChange={onChange} />
                 </FormItem>
             </Form>
         </ContentPage>
