@@ -21,6 +21,10 @@ export const Form = styled(FormBase)`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 10%;
+    @media screen(min-width: 800px){
+        padding: 0 20%;
+    }
 `;
 
 export const FormItem = styled(FormBase.Item)`
@@ -29,11 +33,11 @@ export const FormItem = styled(FormBase.Item)`
         border: solid 3px #00aeff;
         heigth: 40px;
         height: 1.5em;
-        font-size: 1em;
+        font-size: 1.2em;
         width: 70%;
         margin-top: 0.5em;
     }
     label{
-        font-size: 1em;
+        font-size: 1.2em;
     }
 `;

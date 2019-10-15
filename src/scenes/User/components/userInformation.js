@@ -1,21 +1,22 @@
 import React from 'react';
-import { Input, Checkbox} from 'antd';
+import { Input, Checkbox } from 'antd';
 import {ContentPage,  Form, FormItem} from 'components/baseComponents';
+import {MaterialList} from 'Constants';
 
 export default function UserInformation() {
-    const materialOptions = [
-        { label: 'Papel', value: 'Papel' },
-        { label: 'Aluminio', value: 'Aluminio' },
-        { label: 'Vidro', value: 'Vidro' },
-    ];
-    
+    const materialOptions = MaterialList.map(item => {
+        return(
+            { label: item, value: item }
+        );
+    })
+
     function onChange(checkedValues) {
         console.log('checked = ', checkedValues);
     }
 
     return (
         <ContentPage>
-            <Form formLayout='horizontal'>
+            <Form>
                 <FormItem label="Nome da Cooperativa">
                     <Input placeholder="Nome da Cooperativa" />
                 </FormItem>
