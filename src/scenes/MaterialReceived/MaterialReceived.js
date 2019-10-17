@@ -1,5 +1,6 @@
+import React from 'react';
 import {HeaderPage, ContentPage,  Form, FormItem} from 'components/baseComponents';
-import {Layout} from 'antd';
+import {Layout, Input} from 'antd';
 const { Content } = Layout;
 
 export default function MaterialReceived() {

@@ -51,6 +51,6 @@ export const CheckboxList = styled(CheckboxBase.Group)`
     }
     input{
         height: 15px;
-    width: 20px;
+        width: 20px;
     }
 `;
