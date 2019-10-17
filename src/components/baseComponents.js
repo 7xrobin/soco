@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Form as FormBase } from 'antd';
 import {Layout as LayoutBase } from 'antd';
+import {Checkbox as CheckboxBase } from 'antd';
 
 export const HeaderPage = styled(LayoutBase.Header)`
     text-align: center;
@@ -39,5 +40,17 @@ export const FormItem = styled(FormBase.Item)`
     }
     label{
         font-size: 1.2em;
+    }
+`;
+
+export const CheckboxList = styled(CheckboxBase.Group)`
+    display: flex;
+    flex-direction: column;
+    && label{
+        margin: 0.5em;
+    }
+    input{
+        height: 15px;
+    width: 20px;
     }
 `;

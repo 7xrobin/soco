@@ -1,7 +1,12 @@
 import React from 'react';
 import { Input, Checkbox } from 'antd';
-import {ContentPage,  Form, FormItem} from 'components/baseComponents';
 import {MaterialList} from 'Constants';
+import {
+    ContentPage,  
+    Form, 
+    FormItem, 
+    CheckboxList} 
+from 'components/baseComponents';
 
 export default function UserInformation() {
     const materialOptions = MaterialList.map(item => {
@@ -27,7 +32,7 @@ export default function UserInformation() {
                     <Input placeholder="Quantos Cooperados" />
                 </FormItem>
                 <FormItem label="Materiais que trabalha">
-                     <Checkbox.Group options={materialOptions} onChange={onChange} />
+                     <CheckboxList options={materialOptions} onChange={onChange} />
                 </FormItem>
             </Form>
         </ContentPage>
