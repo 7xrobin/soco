@@ -6,7 +6,7 @@ import MaterialReceived from 'scenes/MaterialReceived/MaterialReceived';
 export default function Routes(props)  {
     return (
         <Switch>
-            <Route exact path='/coopertativa' component={User}/>
+            <Route exact path='/' component={User}/>
             <Route path='/material-in' component={MaterialReceived}/>
         </Switch>
     );

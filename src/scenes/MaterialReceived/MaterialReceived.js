@@ -1,9 +1,12 @@
 import React from 'react';
 import {HeaderPage, ContentPage,  Form, FormItem} from 'components/baseComponents';
-import {Layout, Input} from 'antd';
+import {Layout, Input, DatePicker} from 'antd';
+import moment from 'moment';
 const { Content } = Layout;
 
 export default function MaterialReceived() {
+  const dateFormat = 'DD/MM/YYYY';
+
   return (
     <Content>
       <HeaderPage>
@@ -21,7 +24,8 @@ export default function MaterialReceived() {
                   <Input placeholder="Domiciliar, Industrial ou comércio? " />
                 </FormItem>
                 <FormItem label="Data">
-                  <Input placeholder="Relativo a um dia, mês ou ano " />
+                 <DatePicker defaultValue={moment(new Date(),dateFormat) } format={dateFormat} />
+                  {/* <Input placeholder="Relativo a um dia, mês ou ano " /> */}
                 </FormItem>
             </Form>
         </ContentPage>

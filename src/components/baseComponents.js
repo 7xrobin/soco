@@ -35,7 +35,7 @@ export const FormItem = styled(FormBase.Item)`
         heigth: 40px;
         height: 1.5em;
         font-size: 1.2em;
-        width: 70%;
+        min-width: 80%;
         margin-top: 0.5em;
     }
     label{
