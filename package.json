@@ -18,7 +18,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app eject"
   },
   "eslintConfig": {
     "extends": "react-app"
