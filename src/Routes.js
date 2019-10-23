@@ -7,7 +7,7 @@ export default function Routes(props)  {
     return (
         <Switch>
             <Route path='/material-in' component={MaterialReceived}/>
-            <Route path='/user' component={User}/>
+            <Route path='/' component={User}/>
         </Switch>
     );
 };

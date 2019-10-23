@@ -10,6 +10,10 @@ export const HeaderPage = styled(LayoutBase.Header)`
     background: white;
     margin: 0 1em
 `;
+export const LogoName = styled.h2`
+    color: #0fadfc;
+    text-align: center;
+`;
 
 export const ContentPage = styled(LayoutBase.Content)`
     padding: 1em;
@@ -31,8 +35,7 @@ export const FormItem = styled(FormBase.Item)`
     margin: 1.5em;
     & input:not([type='checkbox']){
         border: solid 3px #00aeff;
-        heigth: 40px;
-        height: 1.5em;
+        height: 2em;
         font-size: 1.2em;
         min-width: 80%;
         margin-top: 0.5em;
