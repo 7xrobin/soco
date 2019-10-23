@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
-import Panel from './pages/Panel';
+import Panel from './pages/Panel/Panel';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={Panel} />
+          <Route path="/" component={Panel} />
         </Switch>
       </Router>
     </div>

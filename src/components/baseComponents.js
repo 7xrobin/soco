@@ -5,7 +5,6 @@ import {Checkbox as CheckboxBase } from 'antd';
 
 export const HeaderPage = styled(LayoutBase.Header)`
     text-align: center;
-    padding: 1em;
     font-size: 2em;
     color: #008787;
     background: white;

@@ -24,7 +24,6 @@ export default function MaterialReceived() {
                   <Input placeholder="Domiciliar, Industrial ou comércio? " />
                 </FormItem>
                 <FormItem label="Data">
-                 {/* <DatePicker defaultValue={moment(new Date(),dateFormat) } format={dateFormat} /> */}
                 <Input placeholder="Relativo a um dia, mês ou ano " />
                 </FormItem>
             </Form>
