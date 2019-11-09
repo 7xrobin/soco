@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import User from 'scenes/User/User';
-import MaterialReceived from 'scenes/MaterialReceived/MaterialReceived';
+import User from 'pages/User/User';
+import MaterialReceived from 'pages/MaterialReceived/MaterialReceived';
 
 export default function Routes(props)  {
     return (
