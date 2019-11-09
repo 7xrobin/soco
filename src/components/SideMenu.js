@@ -28,7 +28,7 @@ export default function SideMenu() {
           <span className="nav-text">Material Vendido</span>
         </Menu.Item>
         <Menu.Item key="4">
-          <span className="nav-text">Material Despensado</span>
+          <span className="nav-text">Material Dispensado</span>
         </Menu.Item>
         <Menu.Item key="5">
           <span className="nav-text">Despesas</span>

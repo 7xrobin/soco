@@ -1,7 +1,7 @@
 import React from 'react';
-import Routes from '../../Routes';
+import Routes from 'routes/Routes';
 import { Layout} from  './panelStyle';
-import SideMenu from '../../components/SideMenu';
+import SideMenu from 'components/SideMenu';
 
 export default function Panel() {
   return (

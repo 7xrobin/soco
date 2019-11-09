@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input } from 'antd';
-import {MaterialList} from 'Constants';
+import {MaterialList} from 'constants/constants';
 import {
     ContentPage,  
     Form, 
