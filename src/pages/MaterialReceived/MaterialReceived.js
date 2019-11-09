@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeaderPage, ContentPage,  Form, FormItem} from 'components/baseComponents';
+import {HeaderPage, ContentPage,  Form, FormItem} from 'styled_components/baseComponents';
 import {Layout, Input, DatePicker} from 'antd';
 import moment from 'moment';
 const { Content } = Layout;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Layout, Menu, Icon  } from  'antd';
-import {LogoName} from './baseComponents';
+import {LogoName} from '../styled_components/baseComponents';
 
 const { Sider } = Layout;
 

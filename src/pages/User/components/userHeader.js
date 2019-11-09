@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeaderPage} from 'components/baseComponents';
+import {HeaderPage} from 'styled_components/baseComponents';
 
 
 export default function UserHeader() {

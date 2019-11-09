@@ -6,7 +6,7 @@ import {
     Form, 
     FormItem, 
     CheckboxList} 
-from 'components/baseComponents';
+from 'styled_components/baseComponents';
 
 export default function UserInformation() {
     const materialOptions = MaterialList.map(item => {
