@@ -20,21 +20,14 @@ export default function SideMenu() {
           </Link>
         </Menu.Item>
         <Menu.Item key="2">
-          <Link to='/material-in'>
+          <Link to='/materialrecebido'>
             <span className="nav-text">Material Recebido</span>
           </Link>
         </Menu.Item>
         <Menu.Item key="3">
-          <span className="nav-text">Material Vendido</span>
-        </Menu.Item>
-        <Menu.Item key="4">
-          <span className="nav-text">Material Dispensado</span>
-        </Menu.Item>
-        <Menu.Item key="5">
-          <span className="nav-text">Despesas</span>
-        </Menu.Item>
-        <Menu.Item key="5">
-          <span className="nav-text">Doações</span>
+          <Link to='/materialvendido'>
+            <span className="nav-text">Material Vendido</span>
+          </Link>
         </Menu.Item>
       </Menu>
     </Sider>
