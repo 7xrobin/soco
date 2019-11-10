@@ -1,9 +1,18 @@
 import React from 'react';
-import {Form, FormItem} from 'styled_components/baseComponents';
-import { Input } from 'antd';
+import {Form, FormItem, Dropdown} from 'styled_components/baseComponents';
+import {MaterialList} from 'constants/constants';
+import { Input, Menu, Icon } from 'antd';
 import FormPage from 'templates/FormPage';
 
-
+const materialCategories = (
+  <Menu>
+    {MaterialList.map(item => 
+        <Menu.Item>
+            {item}
+        </Menu.Item>
+    )}
+  </Menu>
+);
 export default function MaterialSold() {
     const headName = "Material Vendido";
     const form = 
@@ -12,10 +21,14 @@ export default function MaterialSold() {
                 <Input placeholder="Que material foi vendido?" />
             </FormItem>
             <FormItem label="Categoria de material">
-                <Input placeholder="Escolha" />
+                <Dropdown overlay={materialCategories}>
+                    <a className="ant-dropdown-link" href="#">
+                            Escolha uma Categoria<Icon type="down" />
+                    </a>
+                </Dropdown>
             </FormItem>
-            <FormItem label="Quantidade de Material">
-                <Input placeholder="Quanto material foi recebido?" />
+            <FormItem label="Peso">
+                <Input placeholder="Quantida de Material" />
             </FormItem>
             <FormItem label="Valor">
                 <Input placeholder="Valor por tonelada" />

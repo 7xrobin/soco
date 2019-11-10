@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import {Form as FormBase } from 'antd';
 import {Layout as LayoutBase } from 'antd';
 import {Checkbox as CheckboxBase } from 'antd';
+import {Dropdown as DropdownBase } from 'antd';
 
 export const HeaderPage = styled(LayoutBase.Header)`
     text-align: center;
@@ -35,13 +36,27 @@ export const FormItem = styled(FormBase.Item)`
     margin: 1.5em;
     & input:not([type='checkbox']){
         border: solid 3px #00aeff;
-        height: 2em;
+        height: 3em;
         font-size: 1.2em;
         min-width: 80%;
         margin-top: 0.5em;
     }
     label{
-        font-size: 1.2em;
+        font-size: 1.7em;
+    }
+`;
+
+export const Dropdown = styled(DropdownBase) `
+    display: block;
+    border: solid 3px #00aeff;
+    height: 3em;
+    font-size: 1.2em;
+    min-width: 80%;
+    margin-top: 0.5em;
+    padding-left: 20px;
+    && i{
+        font-size: 1.2em !important;
+        margin-left: 5px;
     }
 `;
 
