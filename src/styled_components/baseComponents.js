@@ -3,6 +3,7 @@ import {Form as FormBase } from 'antd';
 import {Layout as LayoutBase } from 'antd';
 import {Checkbox as CheckboxBase } from 'antd';
 import {Dropdown as DropdownBase } from 'antd';
+import {Button as ButtonBase } from 'antd';
 
 export const HeaderPage = styled(LayoutBase.Header)`
     text-align: center;
@@ -70,4 +71,10 @@ export const CheckboxList = styled(CheckboxBase.Group)`
         height: 15px;
         width: 20px;
     }
+`;
+
+export const SaveButton = styled(ButtonBase)`
+    height: 3em;
+    margin: auto;
+    width: 200px;
 `;

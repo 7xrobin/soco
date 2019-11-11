@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeaderPage, ContentPage,  Form, FormItem} from 'styled_components/baseComponents';
+import {HeaderPage, ContentPage,  Form, FormItem, SaveButton} from 'styled_components/baseComponents';
 import {Layout, Input, DatePicker} from 'antd';
 import moment from 'moment';
 const { Content } = Layout;
@@ -26,6 +26,7 @@ export default function MaterialReceived() {
                 <FormItem label="Data">
                 <Input placeholder="Relativo a um dia, mês ou ano " />
                 </FormItem>
+                <SaveButton type="primary">Salvar</SaveButton>
             </Form>
         </ContentPage>
     </Content>

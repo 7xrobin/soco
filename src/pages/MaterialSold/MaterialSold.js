@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, FormItem, Dropdown} from 'styled_components/baseComponents';
+import {Form, FormItem, Dropdown, SaveButton} from 'styled_components/baseComponents';
 import {MaterialList} from 'constants/constants';
 import { Input, Menu, Icon } from 'antd';
 import FormPage from 'templates/FormPage';
@@ -33,12 +33,10 @@ export default function MaterialSold() {
             <FormItem label="Valor">
                 <Input placeholder="Valor por tonelada" />
             </FormItem>
-            <FormItem label="Destinatário">
+            <FormItem label="Comprador">
                 <Input placeholder="Quem foi o comprador" />
             </FormItem>
-            <FormItem label="Categoria de Comprador">
-                <Input placeholder="Escolha" />
-            </FormItem>
+            <SaveButton type="primary">Salvar</SaveButton>
         </Form>
     ;
     return (
