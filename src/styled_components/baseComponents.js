@@ -7,7 +7,7 @@ import {Button as ButtonBase } from 'antd';
 
 export const HeaderPage = styled(LayoutBase.Header)`
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     color: #008787;
     background: white;
     margin: 0 1em
